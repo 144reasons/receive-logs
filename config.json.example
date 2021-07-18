@@ -1,5 +1,6 @@
 {
     "webhookID": "WEBHOOKID",
     "webhookToken": "WEBHOOKTOKEN",
-    "apiToken": "APITOKEN"
+    "apiToken": "APITOKEN",
+    "port": "3000"
 }

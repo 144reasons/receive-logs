@@ -31,7 +31,7 @@ app.post('/error', async function(req, res) {
     const embed = new Discord.MessageEmbed()
                     .setColor('RED')
                     .setTitle('Error')
-                    .setDescription(`Logged this error:\n\n\`\`\`${body.error}\`\`\``)
+                    .setDescription(`Logged this error:\n\n\`\`\`${body.log}\`\`\``)
 
     res.send({ 'Logged to discord the error': '' });
     webhookClient.send(embed)
@@ -63,12 +63,12 @@ app.post('/success', async function(req, res) {
     const embed = new Discord.MessageEmbed()
                     .setColor('GREEN')
                     .setTitle('Success')
-                    .setDescription(`\`\`\`${body.success}\`\`\``)
+                    .setDescription(`\`\`\`${body.log}\`\`\``)
 
     res.send({ 'Logged to discord': '' });
     webhookClient.send(embed)
 });
 
-app.listen(3000, function() {
-    console.log("Server is listening on port 3000...");
+app.listen(config.port, function() {
+    console.log(`Server is listening on port ${config.port}...`);
 });
