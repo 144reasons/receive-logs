@@ -4,7 +4,7 @@ This is a simple NodeJS Express api to send info to a Discord Webhook. Wrapper c
 
 ## Installation
 
-Current release: 1.0.0
+Current release: 1.1.0
 
 `$ npm install` or `$ yarn install`
 
@@ -25,7 +25,7 @@ To get the token for your api, either you can create it yourself, or you can use
 
 ## Usage
 
-The api starts on port 3000. On its own it only can be accessed via localhost, but if you implement it to something like NGINX, you can probably be able to access it through the internet. The available endpoints are: `/error`, `/log`, and `/successful`. 
+The api starts on port 3000 by default. Edit it in the config. On its own it only can be accessed via localhost, but if you implement it to something like NGINX, you can probably be able to access it through the internet. The available endpoints are: `/error`, `/log`, and `/successful`. 
 A valid request should look like this:
 ```json
 {

@@ -69,6 +69,11 @@ app.post('/success', async function(req, res) {
     webhookClient.send(embed)
 });
 
-app.listen(config.port, function() {
-    console.log(`Server is listening on port ${config.port}...`);
+let port
+
+if(isNaN(config.port)) port = 3000
+else port = config.port
+
+app.listen(port, function() {
+    console.log(`Server is listening on port ${port}...`);
 });
