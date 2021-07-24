@@ -2,6 +2,8 @@
 
 This is a simple NodeJS Express api to send info to a Discord Webhook. Wrapper coming soon.
 
+Github link: https://github.com/somerandomcloud/receive-logs
+
 ## Installation
 
 Current release: 1.1.0
